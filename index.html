@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>DevTask | Gestao de Projetos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Minhas Tarefas</h1>
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="O que precisamos codar hoje?">
+                <button id="addBtn">+</button>
+            </div>
+        </header>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Todas</button>
+            <button class="filter-btn" data-filter="pending">Pendentes</button>
+            <button class="filter-btn" data-filter="completed">Concluidas</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
